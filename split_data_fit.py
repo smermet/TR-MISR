@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 imset_dir = './probav_data/train/NIR'
 imset_save = './split_data/train/NIR'
 if not os.path.exists(imset_save):
-    os.mkdir(imset_save)
+    os.makedirs(imset_save)
 
 for i in os.listdir(imset_dir):
     # i -> imgsetXXXX
